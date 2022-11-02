@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@keyframes MoveUpAndDown {
+    0% {margin-top: 16px;}
+    33% {margin-top: 17px;}
+    66% {margin-top: 18px;}
+    100% {margin-top: 19px;}
+}
+html {
+    scroll-behavior:smooth;
+  }
+body {
+    background-image: url(/img/bg.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+.NavBar {
+    animation: MoveUpAndDown .35s ease-in-out 2s infinite alternate;
+    margin-top: 15px;
+    margin-left: 33%;
+    width: 500px;
+    height: 50px;
+    background: rgb(250, 250, 250);
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.15);
+    transition: all .15s;
+}
+.NavBar:hover {
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+}
+.LinksNav {
+    margin-left: 25px;
+    display: inline-block;
+    padding: 15px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -.02em;
+    text-decoration: none;
+    -webkit-transition: color .1s linear;
+    -o-transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    transition: color .1s linear;
+}
+.Open {
+    display: inline-block;
+    margin-left: 16px;
+    color: #6500bc;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    -webkit-transition: color .1s linear;
+    -o-transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    transition: color .1s linear;
+}
+.LinksNav:focus,
+.LinksNav:hover {
+    color: #6500bc;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae5f70;
+  color:#fff;
+  margin-top: 5px;
+}
+.container form .purchase-btn {
+  text-align: center;
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #0091ff;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
